@@ -1,45 +1,66 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="wallet_connect_flutter.dart" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/lib/wallet_connect_flutter.dart">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main.dart" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/example/lib/main.dart">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="NONE" />
   </component>
-  <component name="ToolWindowManager">
-    <editor active="true" />
-    <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-    </layout>
+  <component name="ChangeListManager">
+    <list default="true" id="ec6d4cfc-e7c3-4021-9525-37756df5f6f0" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/example/lib/main.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wallet_connect_flutter.iml" beforeDir="false" afterPath="$PROJECT_DIR$/wallet_connect_flutter.iml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="" version="1">
-    </navigator>
-    <panes>
-      <pane id="ProjectPane">
-        <option name="show-excluded-files" value="false" />
-      </pane>
-    </panes>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1v4aZiIsxKYlKqx598lyHM1d6Hn" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="dart.analysis.tool.window.force.activate" value="true" />
+    <property name="dart.analysis.tool.window.visible" value="false" />
+    <property name="io.flutter.reload.alreadyRun" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="show.migrate.to.gradle.popup" value="false" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ec6d4cfc-e7c3-4021-9525-37756df5f6f0" name="Default Changelist" comment="" />
+      <created>1625823871939</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1625823871939</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="1620" y="123" width="1166" height="545" key="AVDManager" timestamp="1625824334560">
+      <screen x="1440" y="23" width="1366" height="745" />
+    </state>
+    <state x="1620" y="123" width="1166" height="545" key="AVDManager/1440.23.1366.745/0.23.1440.792@1440.23.1366.745" timestamp="1625824334560" />
+    <state width="1324" height="187" key="GridCell.Tab.0.bottom" timestamp="1625824667931">
+      <screen x="1440" y="23" width="1366" height="745" />
+    </state>
+    <state width="1324" height="187" key="GridCell.Tab.0.bottom/1440.23.1366.745/0.23.1440.792@1440.23.1366.745" timestamp="1625824667931" />
+    <state width="1324" height="187" key="GridCell.Tab.0.center" timestamp="1625824667927">
+      <screen x="1440" y="23" width="1366" height="745" />
+    </state>
+    <state width="1324" height="187" key="GridCell.Tab.0.center/1440.23.1366.745/0.23.1440.792@1440.23.1366.745" timestamp="1625824667927" />
+    <state width="1324" height="187" key="GridCell.Tab.0.left" timestamp="1625824667925">
+      <screen x="1440" y="23" width="1366" height="745" />
+    </state>
+    <state width="1324" height="187" key="GridCell.Tab.0.left/1440.23.1366.745/0.23.1440.792@1440.23.1366.745" timestamp="1625824667925" />
+    <state width="1324" height="187" key="GridCell.Tab.0.right" timestamp="1625824667929">
+      <screen x="1440" y="23" width="1366" height="745" />
+    </state>
+    <state width="1324" height="187" key="GridCell.Tab.0.right/1440.23.1366.745/0.23.1440.792@1440.23.1366.745" timestamp="1625824667929" />
   </component>
 </project>

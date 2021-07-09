@@ -1,10 +1,12 @@
-import 'package:flutter/material.dart';
+ //@dart = 2.3
 import 'dart:async';
-
+import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:wallet_connect_flutter/wallet_connect_flutter.dart';
 
+
 void main() {
+  WidgetsFlutterBinding.ensureInitialized();
   runApp(MyApp());
 }
 
@@ -14,7 +16,7 @@ class MyApp extends StatefulWidget {
 }
 
 class _MyAppState extends State<MyApp> {
-  String _platformVersion = 'Unknown';
+  String platformVersion = 'Unknown';
 
   @override
   void initState() {
@@ -22,37 +24,50 @@ class _MyAppState extends State<MyApp> {
     initPlatformState();
   }
 
-  // Platform messages are asynchronous, so we initialize in an async method.
   Future<void> initPlatformState() async {
     String platformVersion;
-    // Platform messages may fail, so we use a try/catch PlatformException.
-    // We also handle the message potentially returning null.
     try {
-      platformVersion =
-          await WalletConnectFlutter.platformVersion ?? 'Unknown platform version';
+      platformVersion = await WalletConnectFlutter.platformVersion;
     } on PlatformException {
       platformVersion = 'Failed to get platform version.';
     }
 
-    // If the widget was removed from the tree while the asynchronous platform
-    // message was in flight, we want to discard the reply rather than calling
-    // setState to update our non-existent appearance.
     if (!mounted) return;
 
     setState(() {
-      _platformVersion = platformVersion;
+      platformVersion = platformVersion;
     });
   }
+
+
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        appBar: AppBar(
-          title: const Text('Plugin example app'),
-        ),
+        backgroundColor: const Color(0xff111637),
         body: Center(
-          child: Text('Running on: $_platformVersion\n'),
+          child: Container(
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: [
+                Text("Wallet connect Flutter",style: TextStyle(color: Colors.white,fontSize: 18),),
+                Padding(
+                  padding: const EdgeInsets.only(top: 40.0),
+                  child: Container(width: 120,height: 50, child: ElevatedButton(onPressed: (){}, child: Text("Connect"))),
+                ),
+                Padding(
+                  padding: const EdgeInsets.only(top: 30.0),
+                  child: Container(width: 120,height: 50,child: ElevatedButton(onPressed: (){}, child: Text("Disconnect"))),
+                ),
+                Padding(
+                  padding: const EdgeInsets.only(top: 30.0),
+                  child: Container(width: 120,height: 50, child: ElevatedButton(onPressed: (){}, child: Text("Send TX"))),
+                ),
+              ],
+            ),
+          ),
         ),
       ),
     );
