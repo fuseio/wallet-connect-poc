@@ -3,21 +3,53 @@
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="NONE" />
   </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="ec6d4cfc-e7c3-4021-9525-37756df5f6f0" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/android/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/android/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/android/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/example/android/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/android/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/example/android/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/android/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/example/android/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/example/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/example/lib/main.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wallet_connect_flutter.iml" beforeDir="false" afterPath="$PROJECT_DIR$/wallet_connect_flutter.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Kotlin Script" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1v4aZiIsxKYlKqx598lyHM1d6Hn" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -27,8 +59,14 @@
     <property name="dart.analysis.tool.window.force.activate" value="true" />
     <property name="dart.analysis.tool.window.visible" value="false" />
     <property name="io.flutter.reload.alreadyRun" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/android/src/main/kotlin/com/example/wallet_connect_flutter" />
     <property name="show.migrate.to.gradle.popup" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/android/src/main/kotlin/com/example/wallet_connect_flutter" />
+      <recent name="$PROJECT_DIR$/example/android/app/src/main/kotlin/com/example/wallet_connect_flutter_example" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -41,26 +79,49 @@
     </task>
     <servers />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="WindowStateProjectService">
     <state x="1620" y="123" width="1166" height="545" key="AVDManager" timestamp="1625824334560">
       <screen x="1440" y="23" width="1366" height="745" />
     </state>
     <state x="1620" y="123" width="1166" height="545" key="AVDManager/1440.23.1366.745/0.23.1440.792@1440.23.1366.745" timestamp="1625824334560" />
-    <state width="1324" height="187" key="GridCell.Tab.0.bottom" timestamp="1625824667931">
-      <screen x="1440" y="23" width="1366" height="745" />
+    <state width="1392" height="163" key="GridCell.Tab.0.bottom" timestamp="1625834617169">
+      <screen x="0" y="23" width="1440" height="786" />
     </state>
+    <state width="1392" height="163" key="GridCell.Tab.0.bottom/1440.23.1366.745/0.23.1440.786@0.23.1440.786" timestamp="1625834617169" />
+    <state width="1392" height="163" key="GridCell.Tab.0.bottom/1440.23.1366.745/0.23.1440.790@0.23.1440.790" timestamp="1625834281516" />
     <state width="1324" height="187" key="GridCell.Tab.0.bottom/1440.23.1366.745/0.23.1440.792@1440.23.1366.745" timestamp="1625824667931" />
-    <state width="1324" height="187" key="GridCell.Tab.0.center" timestamp="1625824667927">
-      <screen x="1440" y="23" width="1366" height="745" />
+    <state width="1392" height="163" key="GridCell.Tab.0.center" timestamp="1625834617168">
+      <screen x="0" y="23" width="1440" height="786" />
     </state>
+    <state width="1392" height="163" key="GridCell.Tab.0.center/1440.23.1366.745/0.23.1440.786@0.23.1440.786" timestamp="1625834617168" />
+    <state width="1392" height="163" key="GridCell.Tab.0.center/1440.23.1366.745/0.23.1440.790@0.23.1440.790" timestamp="1625834281515" />
     <state width="1324" height="187" key="GridCell.Tab.0.center/1440.23.1366.745/0.23.1440.792@1440.23.1366.745" timestamp="1625824667927" />
-    <state width="1324" height="187" key="GridCell.Tab.0.left" timestamp="1625824667925">
-      <screen x="1440" y="23" width="1366" height="745" />
+    <state width="1392" height="163" key="GridCell.Tab.0.left" timestamp="1625834617168">
+      <screen x="0" y="23" width="1440" height="786" />
     </state>
+    <state width="1392" height="163" key="GridCell.Tab.0.left/1440.23.1366.745/0.23.1440.786@0.23.1440.786" timestamp="1625834617168" />
+    <state width="1392" height="163" key="GridCell.Tab.0.left/1440.23.1366.745/0.23.1440.790@0.23.1440.790" timestamp="1625834281515" />
     <state width="1324" height="187" key="GridCell.Tab.0.left/1440.23.1366.745/0.23.1440.792@1440.23.1366.745" timestamp="1625824667925" />
-    <state width="1324" height="187" key="GridCell.Tab.0.right" timestamp="1625824667929">
-      <screen x="1440" y="23" width="1366" height="745" />
+    <state width="1392" height="163" key="GridCell.Tab.0.right" timestamp="1625834617169">
+      <screen x="0" y="23" width="1440" height="786" />
     </state>
+    <state width="1392" height="163" key="GridCell.Tab.0.right/1440.23.1366.745/0.23.1440.786@0.23.1440.786" timestamp="1625834617169" />
+    <state width="1392" height="163" key="GridCell.Tab.0.right/1440.23.1366.745/0.23.1440.790@0.23.1440.790" timestamp="1625834281516" />
     <state width="1324" height="187" key="GridCell.Tab.0.right/1440.23.1366.745/0.23.1440.792@1440.23.1366.745" timestamp="1625824667929" />
+    <state x="305" y="168" key="IDE.errors.dialog" timestamp="1625834410307">
+      <screen x="0" y="23" width="1440" height="790" />
+    </state>
+    <state x="305" y="168" key="IDE.errors.dialog/1440.23.1366.745/0.23.1440.790@0.23.1440.790" timestamp="1625834410307" />
   </component>
 </project>

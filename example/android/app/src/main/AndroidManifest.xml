@@ -1,6 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.wallet_connect_flutter_example">
-   <application
+    <uses-permission android:name="android.permission.INTERNET"/>  <!--add -->
+    <application
         android:label="wallet_connect_flutter_example"
         android:icon="@mipmap/ic_launcher">
         <activity
