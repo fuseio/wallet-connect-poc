@@ -1,9 +1,8 @@
- //@dart = 2.3
+//@dart = 2.3
 import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:wallet_connect_flutter/wallet_connect_flutter.dart';
-
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
@@ -24,23 +23,6 @@ class _MyAppState extends State<MyApp> {
     initPlatformState();
   }
 
-  Future<void> initPlatformState() async {
-    String platformVersion;
-    try {
-      platformVersion = await WalletConnectFlutter.platformVersion;
-    } on PlatformException {
-      platformVersion = 'Failed to get platform version.';
-    }
-
-    if (!mounted) return;
-
-    setState(() {
-      platformVersion = platformVersion;
-    });
-  }
-
-
-
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -53,18 +35,46 @@ class _MyAppState extends State<MyApp> {
               mainAxisAlignment: MainAxisAlignment.center,
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
-                Text("Wallet connect Flutter",style: TextStyle(color: Colors.white,fontSize: 18),),
+                Text(
+                  "phone version: $platformVersion",
+                  style: TextStyle(color: Colors.white, fontSize: 12),
+                ),
+                Padding(
+                  padding: const EdgeInsets.only(top: 20.0),
+                  child: Text(
+                    "Wallet connect Flutter",
+                    style: TextStyle(color: Colors.white, fontSize: 18),
+                  ),
+                ),
                 Padding(
                   padding: const EdgeInsets.only(top: 40.0),
-                  child: Container(width: 120,height: 50, child: ElevatedButton(onPressed: (){}, child: Text("Connect"))),
+                  child: Container(
+                      width: 120,
+                      height: 50,
+                      child: ElevatedButton(
+                          onPressed: () {
+                            _onConnect();
+                          },
+                          child: Text("Connect"))),
                 ),
                 Padding(
                   padding: const EdgeInsets.only(top: 30.0),
-                  child: Container(width: 120,height: 50,child: ElevatedButton(onPressed: (){}, child: Text("Disconnect"))),
+                  child: Container(
+                      width: 120,
+                      height: 50,
+                      child: ElevatedButton(
+                          onPressed: () {
+                            _onDisconnect();
+                          },
+                          child: Text("Disconnect"))),
                 ),
                 Padding(
                   padding: const EdgeInsets.only(top: 30.0),
-                  child: Container(width: 120,height: 50, child: ElevatedButton(onPressed: (){}, child: Text("Send TX"))),
+                  child: Container(
+                      width: 120,
+                      height: 50,
+                      child: ElevatedButton(
+                          onPressed: () {}, child: Text("Send TX"))),
                 ),
               ],
             ),
@@ -72,5 +82,31 @@ class _MyAppState extends State<MyApp> {
         ),
       ),
     );
+  }
+
+  Future<void> initPlatformState() async {
+    String _platformVersion;
+    try {
+      _platformVersion = await WalletConnectFlutter.platformVersion;
+    } on PlatformException {
+      platformVersion = 'Failed to get platform version.';
+    }
+
+    if (!mounted) return;
+
+    setState(() {
+      platformVersion = _platformVersion;
+    });
+  }
+
+  _onConnect() {
+    print("main: _onConnect");
+    return WalletConnectFlutter.onConnect()
+        .then((value) => print("value: " + value.toString()));
+  }
+
+  _onDisconnect() {
+    print("_onDisconnect");
+    return WalletConnectFlutter.onDisconnect;
   }
 }
