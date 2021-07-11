@@ -47,34 +47,61 @@ class _MyAppState extends State<MyApp> {
                   ),
                 ),
                 Padding(
-                  padding: const EdgeInsets.only(top: 40.0),
-                  child: Container(
-                      width: 120,
-                      height: 50,
-                      child: ElevatedButton(
-                          onPressed: () {
-                            _onConnect();
-                          },
-                          child: Text("Connect"))),
+                  padding: const EdgeInsets.only(top: 50.0),
+                  child: ClipRRect(
+                    borderRadius: BorderRadius.circular(10),
+                    child: Container(
+                        width: 120,
+                        height: 50,
+                        child: ElevatedButton(
+                            onPressed: () {
+                              _onConnect();
+                            },
+                            style: ButtonStyle(
+                              elevation: MaterialStateProperty.all<double>(10.0),
+                                backgroundColor:
+                                    MaterialStateProperty.all<Color>(
+                                        Color(0XFF34b4eb))),
+                            child: Text("Connect"))),
+                  ),
                 ),
                 Padding(
                   padding: const EdgeInsets.only(top: 30.0),
-                  child: Container(
-                      width: 120,
-                      height: 50,
-                      child: ElevatedButton(
-                          onPressed: () {
-                            _onDisconnect();
-                          },
-                          child: Text("Disconnect"))),
+                  child: ClipRRect(
+                    borderRadius: BorderRadius.circular(10),
+                    child: Container(
+                        width: 120,
+                        height: 50,
+                        child: ElevatedButton(
+                            onPressed: () {
+                              _onDisconnect();
+                            },
+                            style: ButtonStyle(
+                                elevation: MaterialStateProperty.all<double>(10.0),
+                                backgroundColor:
+                                    MaterialStateProperty.all<Color>(
+                                        Color(0XFF34b4eb))),
+                            child: Text("Disconnect"))),
+                  ),
                 ),
                 Padding(
                   padding: const EdgeInsets.only(top: 30.0),
-                  child: Container(
-                      width: 120,
-                      height: 50,
-                      child: ElevatedButton(
-                          onPressed: () {}, child: Text("Send TX"))),
+                  child: ClipRRect(
+                    borderRadius: BorderRadius.circular(10),
+                    child: Container(
+                        width: 120,
+                        height: 50,
+                        child: ElevatedButton(
+                            onPressed: () {
+                              _onSendTX();
+                            },
+                            style: ButtonStyle(
+                                elevation: MaterialStateProperty.all<double>(10.0),
+                                backgroundColor:
+                                    MaterialStateProperty.all<Color>(
+                                        Color(0XFF34b4eb))),
+                            child: Text("Send TX"))),
+                  ),
                 ),
               ],
             ),
@@ -108,5 +135,10 @@ class _MyAppState extends State<MyApp> {
   _onDisconnect() {
     print("_onDisconnect");
     return WalletConnectFlutter.onDisconnect;
+  }
+
+  _onSendTX() {
+    print("_onSendTX");
+    return WalletConnectFlutter.onSendTX;
   }
 }

@@ -2,6 +2,7 @@ package com.example.wallet_connect_flutter
 import androidx.multidex.MultiDexApplication
 import com.squareup.moshi.Moshi
 import com.example.wallet_connect_flutter.server.BridgeServer
+import org.walletconnect.*
 
 import okhttp3.OkHttpClient
 import org.komputing.khex.extensions.toNoPrefixHexString
@@ -12,32 +13,7 @@ import java.io.File
 import java.util.*
 
 class ExampleApplication : MultiDexApplication() {
-    override fun onCreate() {
-        super.onCreate()
-        initMoshi()
-        initClient()
-        initBridge()
-        initSessionStorage()
-    }
-
-    private fun initClient() {
-        client = OkHttpClient.Builder().build()
-    }
-
-    private fun initMoshi() {
-        moshi = Moshi.Builder().build()
-    }
-
-
-    private fun initBridge() {
-        bridge = BridgeServer(moshi)
-        bridge.start()
-    }
-
-    private fun initSessionStorage() {
-        storage = FileWCSessionStore(File(cacheDir, "session_store.json").apply { createNewFile() }, moshi)
-    }
-
+    override fun onCreate() {super.onCreate()}
     companion object {
         private lateinit var client: OkHttpClient
         private lateinit var moshi: Moshi
@@ -45,8 +21,25 @@ class ExampleApplication : MultiDexApplication() {
         private lateinit var storage: WCSessionStore
         lateinit var config: Session.Config
         lateinit var session: Session
-
+        private fun initClient() {
+            client = OkHttpClient.Builder().build()
+        }
+    
+        private fun initMoshi() {
+            moshi = Moshi.Builder().build()
+        }
+    
+    
+        private fun initBridge() {
+            bridge = BridgeServer(moshi)
+            bridge.start()
+        }
+    
+      
         fun resetSession() {
+            initMoshi()
+            initClient()
+            initBridge()
             nullOnThrow { session }?.clearCallbacks()
             val key = ByteArray(32).also { Random().nextBytes(it) }.toNoPrefixHexString()
             config = Session.Config(UUID.randomUUID().toString(), "http://localhost:${BridgeServer.PORT}", key)

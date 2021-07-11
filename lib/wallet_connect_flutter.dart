@@ -20,4 +20,9 @@ class WalletConnectFlutter {
     final String? res = await _channel.invokeMethod('onDisconnect');
     return res;
   }
+
+  static Future<String?> onSendTX() async {
+    final String? res = await _channel.invokeMethod('onSendTX');
+    return res;
+  }
 }
