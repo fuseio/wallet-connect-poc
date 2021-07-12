@@ -55,10 +55,11 @@ class _MyAppState extends State<MyApp> {
                         height: 50,
                         child: ElevatedButton(
                             onPressed: () {
-                              _onConnect();
+                              //_onConnect();
                             },
                             style: ButtonStyle(
-                              elevation: MaterialStateProperty.all<double>(10.0),
+                                elevation:
+                                    MaterialStateProperty.all<double>(10.0),
                                 backgroundColor:
                                     MaterialStateProperty.all<Color>(
                                         Color(0XFF34b4eb))),
@@ -77,7 +78,8 @@ class _MyAppState extends State<MyApp> {
                               _onDisconnect();
                             },
                             style: ButtonStyle(
-                                elevation: MaterialStateProperty.all<double>(10.0),
+                                elevation:
+                                    MaterialStateProperty.all<double>(10.0),
                                 backgroundColor:
                                     MaterialStateProperty.all<Color>(
                                         Color(0XFF34b4eb))),
@@ -96,7 +98,8 @@ class _MyAppState extends State<MyApp> {
                               _onSendTX();
                             },
                             style: ButtonStyle(
-                                elevation: MaterialStateProperty.all<double>(10.0),
+                                elevation:
+                                    MaterialStateProperty.all<double>(10.0),
                                 backgroundColor:
                                     MaterialStateProperty.all<Color>(
                                         Color(0XFF34b4eb))),
@@ -126,11 +129,11 @@ class _MyAppState extends State<MyApp> {
     });
   }
 
-  _onConnect() {
+  /* _onConnect() {
     print("main: _onConnect");
     return WalletConnectFlutter.onConnect()
         .then((value) => print("value: " + value.toString()));
-  }
+  } */
 
   _onDisconnect() {
     print("_onDisconnect");

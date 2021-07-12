@@ -23,16 +23,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ec6d4cfc-e7c3-4021-9525-37756df5f6f0" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.settings/org.eclipse.buildship.core.prefs" beforeDir="false" afterPath="$PROJECT_DIR$/android/.settings/org.eclipse.buildship.core.prefs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/android/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/src/main/kotlin/com/example/wallet_connect_flutter/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/main/kotlin/com/example/wallet_connect_flutter/MainActivity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/src/main/kotlin/com/example/wallet_connect_flutter/WalletConnectFlutterPlugin.kt" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/main/kotlin/com/example/wallet_connect_flutter/WalletConnectFlutterPlugin.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/android/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/example/android/app/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/example/lib/main.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/wallet_connect_flutter.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/wallet_connect_flutter.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wallet_connect_flutter.iml" beforeDir="false" afterPath="$PROJECT_DIR$/wallet_connect_flutter.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -122,45 +113,50 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="1620" y="123" width="1166" height="545" key="AVDManager" timestamp="1625824334560">
-      <screen x="1440" y="23" width="1366" height="745" />
-    </state>
-    <state x="1620" y="123" width="1166" height="545" key="AVDManager/1440.23.1366.745/0.23.1440.792@1440.23.1366.745" timestamp="1625824334560" />
-    <state width="1398" height="274" key="GridCell.Tab.0.bottom" timestamp="1625951189382">
+    <state x="190" y="130" width="1230" height="584" key="AVDManager" timestamp="1626011375764">
       <screen x="0" y="23" width="1440" height="792" />
     </state>
+    <state x="190" y="130" width="1230" height="584" key="AVDManager/1440.23.1366.745/0.23.1440.792@0.23.1440.792" timestamp="1626011375764" />
+    <state x="1620" y="123" width="1166" height="545" key="AVDManager/1440.23.1366.745/0.23.1440.792@1440.23.1366.745" timestamp="1625824334560" />
+    <state width="1398" height="271" key="GridCell.Tab.0.bottom" timestamp="1626012380678">
+      <screen x="0" y="23" width="1440" height="786" />
+    </state>
+    <state width="1398" height="271" key="GridCell.Tab.0.bottom/0.23.1440.786@0.23.1440.786" timestamp="1626012380678" />
     <state width="1392" height="163" key="GridCell.Tab.0.bottom/1440.23.1366.745/0.23.1440.786@0.23.1440.786" timestamp="1625834617169" />
     <state width="1392" height="163" key="GridCell.Tab.0.bottom/1440.23.1366.745/0.23.1440.790@0.23.1440.790" timestamp="1625834281516" />
-    <state width="1398" height="274" key="GridCell.Tab.0.bottom/1440.23.1366.745/0.23.1440.792@0.23.1440.792" timestamp="1625951189382" />
+    <state width="1398" height="274" key="GridCell.Tab.0.bottom/1440.23.1366.745/0.23.1440.792@0.23.1440.792" timestamp="1626011271463" />
     <state width="1392" height="150" key="GridCell.Tab.0.bottom/1440.23.1366.745/0.23.1440.792@1440.23.1366.745" timestamp="1625942191934" />
-    <state width="1398" height="274" key="GridCell.Tab.0.bottom/1440.23.1366.745/0.23.1440.795@0.23.1440.795" timestamp="1625948001359" />
+    <state width="1398" height="274" key="GridCell.Tab.0.bottom/1440.23.1366.745/0.23.1440.795@0.23.1440.795" timestamp="1626011133482" />
     <state width="1398" height="274" key="GridCell.Tab.0.bottom/1440.23.1366.745/0.23.1440.798@0.23.1440.798" timestamp="1625949904784" />
-    <state width="1398" height="274" key="GridCell.Tab.0.center" timestamp="1625951189381">
-      <screen x="0" y="23" width="1440" height="792" />
+    <state width="1398" height="271" key="GridCell.Tab.0.center" timestamp="1626012380677">
+      <screen x="0" y="23" width="1440" height="786" />
     </state>
+    <state width="1398" height="271" key="GridCell.Tab.0.center/0.23.1440.786@0.23.1440.786" timestamp="1626012380677" />
     <state width="1392" height="163" key="GridCell.Tab.0.center/1440.23.1366.745/0.23.1440.786@0.23.1440.786" timestamp="1625834617168" />
     <state width="1392" height="163" key="GridCell.Tab.0.center/1440.23.1366.745/0.23.1440.790@0.23.1440.790" timestamp="1625834281515" />
-    <state width="1398" height="274" key="GridCell.Tab.0.center/1440.23.1366.745/0.23.1440.792@0.23.1440.792" timestamp="1625951189381" />
+    <state width="1398" height="274" key="GridCell.Tab.0.center/1440.23.1366.745/0.23.1440.792@0.23.1440.792" timestamp="1626011271455" />
     <state width="1392" height="150" key="GridCell.Tab.0.center/1440.23.1366.745/0.23.1440.792@1440.23.1366.745" timestamp="1625942191932" />
-    <state width="1398" height="274" key="GridCell.Tab.0.center/1440.23.1366.745/0.23.1440.795@0.23.1440.795" timestamp="1625948001359" />
+    <state width="1398" height="274" key="GridCell.Tab.0.center/1440.23.1366.745/0.23.1440.795@0.23.1440.795" timestamp="1626011133363" />
     <state width="1398" height="274" key="GridCell.Tab.0.center/1440.23.1366.745/0.23.1440.798@0.23.1440.798" timestamp="1625949904783" />
-    <state width="1398" height="274" key="GridCell.Tab.0.left" timestamp="1625951189380">
-      <screen x="0" y="23" width="1440" height="792" />
+    <state width="1398" height="271" key="GridCell.Tab.0.left" timestamp="1626012380677">
+      <screen x="0" y="23" width="1440" height="786" />
     </state>
+    <state width="1398" height="271" key="GridCell.Tab.0.left/0.23.1440.786@0.23.1440.786" timestamp="1626012380677" />
     <state width="1392" height="163" key="GridCell.Tab.0.left/1440.23.1366.745/0.23.1440.786@0.23.1440.786" timestamp="1625834617168" />
     <state width="1392" height="163" key="GridCell.Tab.0.left/1440.23.1366.745/0.23.1440.790@0.23.1440.790" timestamp="1625834281515" />
-    <state width="1398" height="274" key="GridCell.Tab.0.left/1440.23.1366.745/0.23.1440.792@0.23.1440.792" timestamp="1625951189380" />
+    <state width="1398" height="274" key="GridCell.Tab.0.left/1440.23.1366.745/0.23.1440.792@0.23.1440.792" timestamp="1626011271434" />
     <state width="1392" height="150" key="GridCell.Tab.0.left/1440.23.1366.745/0.23.1440.792@1440.23.1366.745" timestamp="1625942191931" />
-    <state width="1398" height="274" key="GridCell.Tab.0.left/1440.23.1366.745/0.23.1440.795@0.23.1440.795" timestamp="1625948001358" />
+    <state width="1398" height="274" key="GridCell.Tab.0.left/1440.23.1366.745/0.23.1440.795@0.23.1440.795" timestamp="1626011133343" />
     <state width="1398" height="274" key="GridCell.Tab.0.left/1440.23.1366.745/0.23.1440.798@0.23.1440.798" timestamp="1625949904783" />
-    <state width="1398" height="274" key="GridCell.Tab.0.right" timestamp="1625951189381">
-      <screen x="0" y="23" width="1440" height="792" />
+    <state width="1398" height="271" key="GridCell.Tab.0.right" timestamp="1626012380678">
+      <screen x="0" y="23" width="1440" height="786" />
     </state>
+    <state width="1398" height="271" key="GridCell.Tab.0.right/0.23.1440.786@0.23.1440.786" timestamp="1626012380678" />
     <state width="1392" height="163" key="GridCell.Tab.0.right/1440.23.1366.745/0.23.1440.786@0.23.1440.786" timestamp="1625834617169" />
     <state width="1392" height="163" key="GridCell.Tab.0.right/1440.23.1366.745/0.23.1440.790@0.23.1440.790" timestamp="1625834281516" />
-    <state width="1398" height="274" key="GridCell.Tab.0.right/1440.23.1366.745/0.23.1440.792@0.23.1440.792" timestamp="1625951189381" />
+    <state width="1398" height="274" key="GridCell.Tab.0.right/1440.23.1366.745/0.23.1440.792@0.23.1440.792" timestamp="1626011271457" />
     <state width="1392" height="150" key="GridCell.Tab.0.right/1440.23.1366.745/0.23.1440.792@1440.23.1366.745" timestamp="1625942191933" />
-    <state width="1398" height="274" key="GridCell.Tab.0.right/1440.23.1366.745/0.23.1440.795@0.23.1440.795" timestamp="1625948001359" />
+    <state width="1398" height="274" key="GridCell.Tab.0.right/1440.23.1366.745/0.23.1440.795@0.23.1440.795" timestamp="1626011133448" />
     <state width="1398" height="274" key="GridCell.Tab.0.right/1440.23.1366.745/0.23.1440.798@0.23.1440.798" timestamp="1625949904784" />
     <state x="305" y="168" key="IDE.errors.dialog" timestamp="1625834410307">
       <screen x="0" y="23" width="1440" height="790" />
@@ -170,9 +166,10 @@
       <screen x="0" y="23" width="1440" height="792" />
     </state>
     <state x="221" y="58" key="SettingsEditor/1440.23.1366.745/0.23.1440.792@0.23.1440.792" timestamp="1625942323255" />
-    <state x="421" y="174" width="598" height="490" key="find.popup" timestamp="1625951168544">
-      <screen x="0" y="23" width="1440" height="792" />
+    <state x="421" y="175" width="623" height="492" key="find.popup" timestamp="1626011712265">
+      <screen x="0" y="23" width="1440" height="795" />
     </state>
+    <state x="421" y="175" width="623" height="492" key="find.popup/0.23.1440.795@0.23.1440.795" timestamp="1626011712265" />
     <state x="421" y="174" width="598" height="490" key="find.popup/1440.23.1366.745/0.23.1440.792@0.23.1440.792" timestamp="1625951168544" />
   </component>
 </project>

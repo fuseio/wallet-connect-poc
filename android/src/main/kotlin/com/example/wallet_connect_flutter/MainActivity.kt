@@ -1,4 +1,5 @@
 package com.example.wallet_connect_flutter
+import java.net.URLEncoder
 
 import android.app.Activity
 import android.os.Bundle
@@ -38,12 +39,9 @@ class MainActivity : Activity(), Session.Callback {
         session.addCallback(this)
         sessionApproved()
     }
-    fun connect(){
-        ExampleApplication.resetSession()
+    fun connect(qr: String){
+        ExampleApplication.resetSession(qr)
         ExampleApplication.session.addCallback(this)
-        val i = Intent(Intent.ACTION_VIEW)
-        i.data = Uri.parse(ExampleApplication.config.toWCUri())
-        startActivity(i)
     }
 
     fun disconnect(){
