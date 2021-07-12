@@ -19,7 +19,7 @@ class ExampleApplication : MultiDexApplication() {
         private lateinit var moshi: Moshi
         private lateinit var bridge: BridgeServer
         private lateinit var storage: WCSessionStore
-        lateinit var config: Session.FullyQualifiedConfig
+        lateinit var config: Session.Config
         lateinit var session: Session
         private fun initClient() {
             client = OkHttpClient.Builder().build()
@@ -42,7 +42,7 @@ class ExampleApplication : MultiDexApplication() {
             initBridge()
             nullOnThrow { session }?.clearCallbacks()
             val key = ByteArray(32).also { Random().nextBytes(it) }.toNoPrefixHexString()
-            config = Session.FullyQualifiedConfig(UUID.randomUUID().toString(), "http://localhost:${BridgeServer.PORT}", key)
+            config = Session.Config(UUID.randomUUID().toString(), "http://localhost:${BridgeServer.PORT}", key)
             session = WCSession(
                 config,
                 MoshiPayloadAdapter(moshi),
