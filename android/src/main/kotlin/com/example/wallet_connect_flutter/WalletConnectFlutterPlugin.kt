@@ -36,8 +36,8 @@ class WalletConnectFlutterPlugin: FlutterPlugin, MethodCallHandler, Activity() {
       MainActivity().init()
       result.success("Android ${android.os.Build.VERSION.RELEASE}")
     } else if(call.method == "onConnect"){
-   
-      MainActivity().connect(call.arguments())
+      val qr: String? = call.argument<String>("qr")
+      MainActivity().connect(qr.toString())
       result.success("Success connected")
     }else if(call.method == "onDisconnect"){
       MainActivity().disconnect()

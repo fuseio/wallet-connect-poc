@@ -34,7 +34,6 @@ class MainActivity : Activity(), Session.Callback {
     }
 
     fun init(){
-        ExampleApplication()
         val session = nullOnThrow { ExampleApplication.session } ?: return
         session.addCallback(this)
         sessionApproved()
@@ -68,9 +67,11 @@ class MainActivity : Activity(), Session.Callback {
         this.txRequest = txRequest
     }
     private fun sessionApproved() {
+        var _res="";
         uiScope.launch {
-            var res = "Connected: ${ExampleApplication.session.approvedAccounts()}"
+            _res = "Connected: ${ExampleApplication.session.approvedAccounts().toString()}"
         }
+        println("res: " + _res)
     }
 
     private fun sessionClosed() {

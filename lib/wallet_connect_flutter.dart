@@ -13,7 +13,7 @@ class WalletConnectFlutter {
 
   static Future<String?> onConnect(String qr) async {
     print("qr: " + qr);
-    final String? res = await _channel.invokeMethod('onConnect', [qr]);
+    final String? res = await _channel.invokeMethod('onConnect', {'qr': qr});
     return res;
   }
 

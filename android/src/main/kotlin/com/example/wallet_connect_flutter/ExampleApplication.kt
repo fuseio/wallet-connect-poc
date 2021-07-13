@@ -1,6 +1,6 @@
 package com.example.wallet_connect_flutter
 import androidx.multidex.MultiDexApplication
-import com.squareup.moshi.Moshi
+import com.squareup.moshi.*
 import com.example.wallet_connect_flutter.server.BridgeServer
 import org.walletconnect.*
 
@@ -13,7 +13,12 @@ import java.io.File
 import java.util.*
 
 class ExampleApplication : MultiDexApplication() {
-    override fun onCreate() {super.onCreate()}
+     override fun onCreate() {
+        super.onCreate()
+        initMoshi()
+        initClient()
+        initBridge()
+    }
     companion object {
         private lateinit var client: OkHttpClient
         private lateinit var moshi: Moshi
@@ -26,7 +31,9 @@ class ExampleApplication : MultiDexApplication() {
         }
     
         private fun initMoshi() {
-            moshi = Moshi.Builder().build()
+            moshi = Moshi.Builder()
+            .addLast(KotlinJsonAdapterFactory())
+            .build()
         }
     
     
@@ -40,9 +47,11 @@ class ExampleApplication : MultiDexApplication() {
             initMoshi()
             initClient()
             initBridge()
+            val file = File.createTempFile("yoFGF", "yo2GFDGFD.json")
+            storage = FileWCSessionStore(file,moshi).apply {  }
             nullOnThrow { session }?.clearCallbacks()
-            val key = ByteArray(32).also { Random().nextBytes(it) }.toNoPrefixHexString()
-            config = Session.Config(UUID.randomUUID().toString(), "http://localhost:${BridgeServer.PORT}", key)
+            //val key = ByteArray(32).also { Random().nextBytes(it) }.toNoPrefixHexString()
+            config = Session.Config("9297bfab-8fa9-40a0-a15a-c809270ae82e", "https://bridge.walletconnect.org", "bf2ee021fba079b0bf367df053fbb588d3ae574f275bc8120984d0def0b5f473")
             session = WCSession(
                 config,
                 MoshiPayloadAdapter(moshi),
