@@ -26,32 +26,31 @@ class ExampleApplication : MultiDexApplication() {
         private lateinit var storage: WCSessionStore
         lateinit var config: Session.Config
         lateinit var session: Session
-        private fun initClient() {
+         fun initClient() {
             client = OkHttpClient.Builder().build()
         }
     
-        private fun initMoshi() {
+         fun initMoshi() {
             moshi = Moshi.Builder()
             .addLast(KotlinJsonAdapterFactory())
             .build()
         }
     
     
-        private fun initBridge() {
+         fun initBridge() {
             bridge = BridgeServer(moshi)
             bridge.start()
         }
     
       
         fun resetSession(qr: String) {
-            initMoshi()
-            initClient()
-            initBridge()
-            val file = File.createTempFile("yoFGF", "yo2GFDGFD.json")
+            val file = File.createTempFile("yoFGF", "session_store.json")
+            println(file.path)
             storage = FileWCSessionStore(file,moshi).apply {  }
             nullOnThrow { session }?.clearCallbacks()
-            //val key = ByteArray(32).also { Random().nextBytes(it) }.toNoPrefixHexString()
-            config = Session.Config("9297bfab-8fa9-40a0-a15a-c809270ae82e", "https://bridge.walletconnect.org", "bf2ee021fba079b0bf367df053fbb588d3ae574f275bc8120984d0def0b5f473")
+
+            val key = ByteArray(32).also { Random().nextBytes(it) }.toNoPrefixHexString()
+            config = Session.Config(UUID.randomUUID().toString(), "http://localhost:${BridgeServer.PORT}", key,"wc",1)
             session = WCSession(
                 config,
                 MoshiPayloadAdapter(moshi),
@@ -60,6 +59,10 @@ class ExampleApplication : MultiDexApplication() {
                 Session.PeerMeta(name = "Example App")
             )
             session.offer()
+            print("client: " + client.cache)
+            print("client: " +  MoshiPayloadAdapter(moshi),
+            )
+
         }
     }
 }

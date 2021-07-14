@@ -23,8 +23,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ec6d4cfc-e7c3-4021-9525-37756df5f6f0" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wallet_connect_flutter.iml" beforeDir="false" afterPath="$PROJECT_DIR$/wallet_connect_flutter.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/android/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/src/main/kotlin/com/example/wallet_connect_flutter/ExampleApplication.kt" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/main/kotlin/com/example/wallet_connect_flutter/ExampleApplication.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/android/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/example/android/app/src/main/AndroidManifest.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -113,11 +114,12 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="190" y="130" width="1230" height="584" key="AVDManager" timestamp="1626011375764">
-      <screen x="0" y="23" width="1440" height="792" />
+    <state x="27" y="38" width="1410" height="762" maximized="true" key="AVDManager" timestamp="1626176581178">
+      <screen x="0" y="23" width="1440" height="804" />
     </state>
     <state x="190" y="130" width="1230" height="584" key="AVDManager/1440.23.1366.745/0.23.1440.792@0.23.1440.792" timestamp="1626011375764" />
     <state x="1620" y="123" width="1166" height="545" key="AVDManager/1440.23.1366.745/0.23.1440.792@1440.23.1366.745" timestamp="1625824334560" />
+    <state x="27" y="38" width="1410" height="762" maximized="true" key="AVDManager/1440.23.1366.745/0.23.1440.804@0.23.1440.804" timestamp="1626176581178" />
     <state width="1398" height="271" key="GridCell.Tab.0.bottom" timestamp="1626012380678">
       <screen x="0" y="23" width="1440" height="786" />
     </state>

@@ -15,8 +15,6 @@ import com.example.wallet_connect_flutter.ExampleApplication
 
 class MainActivity : Activity(), Session.Callback {
     private var txRequest: Long? = null
-    private val uiScope = CoroutineScope(Dispatchers.Main)
-
     override fun onMethodCall(call: Session.MethodCall) {}
     override fun onCreate(savedInstanceState: Bundle?) { super.onCreate(savedInstanceState) }
     override fun onStart() { super.onStart() }
@@ -38,9 +36,13 @@ class MainActivity : Activity(), Session.Callback {
         session.addCallback(this)
         sessionApproved()
     }
-    fun connect(qr: String){
+    fun connect(qr: String){   
+        ExampleApplication.initMoshi()
+        ExampleApplication.initClient()
+        ExampleApplication.initBridge()
         ExampleApplication.resetSession(qr)
         ExampleApplication.session.addCallback(this)
+        sessionApproved()
     }
 
     fun disconnect(){
@@ -67,27 +69,17 @@ class MainActivity : Activity(), Session.Callback {
         this.txRequest = txRequest
     }
     private fun sessionApproved() {
-        var _res="";
-        uiScope.launch {
-            _res = "Connected: ${ExampleApplication.session.approvedAccounts().toString()}"
-        }
+        var _res = "Connected: ${ExampleApplication.session.approvedAccounts().toString()}"
         println("res: " + _res)
     }
 
     private fun sessionClosed() {
-        uiScope.launch {
-            var res = "Disconnected"
-        }
+        var _res = "Disconnected";
+        println("res: " + _res)
     }
     private fun handleResponse(resp: Session.MethodCall.Response) {
         if (resp.id == txRequest) {
             txRequest = null
-            uiScope.launch {
-                //screen_main_response.visibility = View.VISIBLE
-                ("Last response: " + ((resp.result as? String) ?: "Unknown response")).also {
-                    //screen_main_response.text = it
-                }
-            }
         }
     }
 
